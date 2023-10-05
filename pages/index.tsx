@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
@@ -7,19 +8,27 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const index = () => {
     return (
         <div className="container">
-          <h1>Helloo</h1>
-          <p>This is a demo. :D</p>
-
+          <div className="flex items-center">
+          <div className="relative w-12 h-12 mr-4">
+            <Image
+              src="/avatar.jpg"
+              alt="头像"
+              layout="fill"
+              objectPosition="center center"
+              className="rounded-full opacity-100"
+            />
+          </div>
+            <h1>buguwu!</h1>
+            <p>This is a demo. :D</p>
+          </div>
           {/* Social Media Buttons */}
-        <div className="flex justify-center space-x-4 mt-4">
-          <SocialMediaButton icon={faTwitter} tooltip="Twitter" link="https://x.com/buguwuofficial" />
-          <SocialMediaButton icon={faGithub} tooltip="GitHub" link="https://github.com/buguwu" />
-          <SocialMediaButton icon={faDiscord} tooltip="Discord" link="#" />
-          <SocialMediaButton icon={faEnvelope} tooltip="Email" link="mailto:i@qwq.lgbt" />
-        </div>
-        </div>
-
-        
+          <div className="flex justify-center space-x-4 mt-4">
+            <SocialMediaButton icon={faTwitter} tooltip="Twitter" link="https://x.com/buguwuofficial" />
+            <SocialMediaButton icon={faGithub} tooltip="GitHub" link="https://github.com/buguwu" />
+            <SocialMediaButton icon={faDiscord} tooltip="Discord" link="https://discordapp.com/users/762850819249930251" />
+            <SocialMediaButton icon={faEnvelope} tooltip="Email" link="mailto:i@qwq.lgbt" />
+          </div>
+      </div>
     );
   };
   

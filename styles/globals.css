@@ -6,7 +6,7 @@
 /* styles/globals.css */
 /* Background Image */
 body {
-  background-image: url('/background.jpg'); /* 确保 background.jpg 在 public 文件夹下 */
+  background-image: url('/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -22,5 +22,5 @@ body {
 .container {
   @apply bg-white rounded-lg shadow-md p-8;
   opacity: 0.75;
-  width: 1/4; /* 设置为屏幕宽度的四分之一 */
+  width: 1/4; 
 }
