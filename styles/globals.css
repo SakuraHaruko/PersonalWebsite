@@ -17,10 +17,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/* Container Styles */
-.container {
-  @apply bg-white rounded-lg shadow-md p-8;
-  opacity: 0.75;
-  width: 1/4; 
-}

@@ -13,6 +13,19 @@ export default function Document() {
         <meta property="og:image" content="https://example.com/your-image.jpg" />
         <meta property="og:url" content={process.env.NEXT_PUBLIC_BASEURL_PROD} />
         <meta property="og:type" content="website" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8YRTESQW8"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag() {
+              dataLayer.push(arguments);
+              }
+              gtag('js', new Date());
+              gtag('config', 'G-V8YRTESQW8');
+      `,
+    }}
+  />
       </Head>
       <body>
         <Main />
