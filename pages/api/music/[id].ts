@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     const id = req.query.id
     
     var headers = new Headers();
@@ -24,3 +24,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     }
     res.redirect(resData.data[0].url);
 }
+
+export default handler;
