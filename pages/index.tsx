@@ -11,7 +11,6 @@ import SocialMediaButton from '@/components/SocialMediaButton';
 import MusicPlayer from '@/components/MusicPlayer'; 
 
 const Index = () => {
-  //const [typewriterVisible, setTypewriterVisible] = useState(false);
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -33,14 +32,6 @@ const Index = () => {
     }
   };
 
-  /*useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setTypewriterVisible(true);
-    }, 1000); // 设置延迟时间，单位是毫秒
-  
-    return () => clearTimeout(timeoutId); // 清除定时器以防止组件卸载时内存泄漏
-  }, []); // 空数组表示只在组件挂载时运行一次*/
-
   return (
     <div>
       <motion.div variants={container} initial="hidden" animate="visible" className="bg-white rounded-lg shadow-md p-8 max-w-lg bg-opacity-90">
@@ -59,21 +50,20 @@ const Index = () => {
             </div>
         </div>
         <motion.div variants={item} className='justify-center rounded-lg border-2 border-pink-200 duration-300 p-4 mt-4 text-pink-200 text-md font-sans bg-white'>
-            {/*{typewriterVisible && (*/}
-            <Typewriter options={{
+        <Typewriter options={{
                                         delay: 50,
                                         strings: ["I'm a 15 years old student and program developer from China, I like to make some interesting things, such as websites, applications, robots, etc... (!TODO)"],
                                         loop: false,
                                         autoStart: true,
                                         deleteSpeed: 604800000,
-                                    }} />{/*})}*/}
-          </motion.div>
+                                    }} />
+        </motion.div>
         {/*<div className="bg-white justify-center rounded-lg p-4 left-4 bottom-4 mt-4"></div>*/}
         <motion.div variants={item}>
         <MusicPlayer playlist={[
             { name: 'MIMI - 心を刺す言葉だけ (feat. 初音ミク & 可不)', src: './api/music/2091770490' },
             { name: '程嘉敏 - 小年兽', src: './api/music/1346758452' },
-            { name: '暗杠/寅子 - 说书人', src: './api/music/1198010' },
+            { name: '茶太/真理絵/くない瓜/Rio/Morrigan/藤枝あかね/たくまる - だんご大家族', src: './api/music/760533' },
           ]}
           />
         <div className='border-b border-pink-200 mt-6' />

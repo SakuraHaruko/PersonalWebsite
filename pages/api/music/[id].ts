@@ -17,7 +17,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       });
       
     const resData = await response.json();
-    console.log(resData);
+    //console.log(resData);
     if (resData.data[0].url == null) {
         res.status(500).json({ code: 500, msg: 'Cannot fetch music url.' })
         return;

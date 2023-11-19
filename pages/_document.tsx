@@ -3,15 +3,15 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <title>{process.env.NEXT_PUBLIC_TITLE}</title>
+      <title>Hey, Here is buguwu!</title>
       <Head>
-        <meta name="description" content={process.env.NEXT_PUBLIC_DESCRIPTION} />
-        <meta name="keywords" content="buguwu bug homepage" />
+        <meta name="description" content="buguwu's personal website" />
+        <meta name="keywords" content="buguwu bug personalwebsite" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content={process.env.NEXT_PUBLIC_TITLE} />
-        <meta property="og:description" content={process.env.NEXT_PUBLIC_DESCRIPTION} />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content={process.env.NEXT_PUBLIC_BASEURL_PROD} />
+        <meta property="og:title" content="Hey, Here is buguwu!" />
+        <meta property="og:description" content="H! Here is buguwu! 这里是buguwu的个人主页~" />
+        <meta property="og:image" content="https://qwq.lgbt/avatar.jpg" />
+        <meta property="og:url" content="https://qwq.lgbt" />
         <meta property="og:type" content="website" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8YRTESQW8"></script>
         <script
