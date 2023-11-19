@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Script from 'next/script';
 
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
@@ -34,6 +35,16 @@ const Index = () => {
 
   return (
     <div>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-V8YRTESQW8" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-V8YRTESQW8');
+        `}
+      </Script>
       <motion.div variants={container} initial="hidden" animate="visible" className="bg-white rounded-lg shadow-md p-8 max-w-lg bg-opacity-90">
           <div className="flex items-center bg-white rounded-lg gap-4 p-4 md:flex-nowrap flex-wrap">
           <motion.div className="item" variants={item}>
