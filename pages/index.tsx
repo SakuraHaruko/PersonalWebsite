@@ -88,7 +88,7 @@ const Index = () => {
         </div>
       </motion.div>
       <div className="text-gray-500 text-sm mt-4 absolute inset-x-0 bottom-0 text-center py-4">
-        <a href="https://icp.gov.moe/?keyword=20236250" target="_blank">萌ICP备20236250号</a>
+        <a href="https://icp.gov.moe/?keyword=20220772" target="_blank">萌ICP备20220772号</a>
       </div>
     </div>
     );
