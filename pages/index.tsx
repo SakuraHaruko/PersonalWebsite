@@ -75,6 +75,9 @@ const Index = () => {
             { name: 'MIMI - 心を刺す言葉だけ (feat. 初音ミク & 可不)', src: './api/music/2091770490' },
             { name: '程嘉敏 - 小年兽', src: './api/music/1346758452' },
             { name: '茶太/真理絵/くない瓜/Rio/Morrigan/藤枝あかね/たくまる - だんご大家族', src: './api/music/760533' },
+            { name: 'Hanauta - ピノキオピー', src: './api/music/489970723' },
+            { name: 'アスノヨゾラ哨戒班 - ゆある', src: './api/music/428642839' },
+            { name: 'ロストワンの号哭 - Neru/鏡音リン', src: './api/music/' }
           ]}
           />
         <div className='border-b border-pink-200 mt-6' />
