@@ -13,8 +13,19 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        wave: {
+          '0%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(-20deg)' },
+          '75%': { transform: 'rotate(20deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
+      },
+      animation: {
+        'wave': 'wave 0.8s linear',
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 }
 export default config
