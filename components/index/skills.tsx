@@ -1,11 +1,12 @@
 "use client";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faJava, faReact} from "@fortawesome/free-brands-svg-icons";
+
 import TypeScriptIcon from "@/public/techIcons/TypeScript.svg";
 import SpringBootIcon from "@/public/techIcons/SpringBoot.svg";
 import MicrosoftNETIcon from  "@/public/techIcons/Microsoft.NET.svg";
 import KotlinIcon from  "@/public/techIcons/Kotlin.svg";
 import PythonIcon from "@/public/techIcons/Python.svg";
+import JavaIcon from "@/public/techIcons/Java.svg";
+import ReactIcon from "@/public/techIcons/React.svg";
 
 import Image from "next/image";
 import FadeInOut from "@/components/animations/FadeInOut";
@@ -48,7 +49,7 @@ export default function MySkills() {
                         end="top top"
                         watch overflowHidden={undefined} skipOutro={undefined} markers={undefined}>
                         <div className="flex flex-col items-center space-y-2">
-                            <FontAwesomeIcon icon={faReact} className="h-12 w-12" color="#61dafb"/>
+                            <ReactIcon />
                             <span className="font-medium">React</span>
                         </div>
                     </TranslateInOut>
@@ -96,7 +97,7 @@ export default function MySkills() {
                         end="top top"
                         watch overflowHidden={undefined} skipOutro={undefined} markers={undefined}>
                         <div className="flex flex-col items-center space-y-2">
-                            <FontAwesomeIcon icon={faJava} className="h-12 w-12"/>
+                            <JavaIcon />
                             <span className="font-medium">Java</span>
                         </div>
                     </TranslateInOut>
