@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   },
 
   twitter : {
-    title: 'Short Url - NekoCafe',
+    title: 'HarukoMoe',
     images: "https://haruko.moe/avatar.jpg",
-    description: 'Shorten your URL~',
+    description: 'Haruko\'s personal website.',
     card: "summary_large_image"
   },
 
