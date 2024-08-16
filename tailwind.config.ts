@@ -22,7 +22,7 @@ const config: Config = {
         },
       },
       animation: {
-        'wave': 'wave 0.8s linear',
+        'wave': 'wave 0.8s 3s linear',
       },
     },
   },

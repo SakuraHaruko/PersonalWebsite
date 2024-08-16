@@ -7,13 +7,3 @@
 body {
     font-family: 'JetBrains Mono', monospace;
 }
-
-.haruko {
-    background-image: url('/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    min-height: 100vh;
-    margin: 0;
-}

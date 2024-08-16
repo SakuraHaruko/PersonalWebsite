@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import './globals.css'
-import Loading from "@/components/loadingProgress";
+import NProgress from "@/components/NProgress";
 import {TransitionContextProvider} from "@/context/transitionContext";
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ export default function RootLayout({
     </head>
       <body>
         <TransitionContextProvider>
-          <Loading>{children}</Loading>
+          <NProgress>{children}</NProgress>
         </TransitionContextProvider>
       </body>
     </html>

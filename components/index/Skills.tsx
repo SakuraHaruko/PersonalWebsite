@@ -32,9 +32,9 @@ export default function MySkills() {
                     </TranslateInOut>
                     <FadeInOut
                         durationIn={0.5}
-                        delay={1.3}
+                        delay={1.1}
                         ease="fast"
-                        watch overflowHidden={undefined} skipOutro={undefined} markers={undefined}                    >
+                        watch overflowHidden={undefined} skipOutro={undefined} markers={undefined}>
                         <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                             I love learning new technologies and frameworks. Here are some of my skills.
                         </p>
@@ -43,7 +43,7 @@ export default function MySkills() {
                 <div className="mx-auto grid max-w-5xl items-center gap-6 sm:grid-cols-2 md:gap-12 lg:grid-cols-4 lg:gap-24">
                     <TranslateInOut
                         durationIn={1.0}
-                        delay={2.0}
+                        delay={1.0}
                         y="100%"
                         start="-100% bottom"
                         end="top top"

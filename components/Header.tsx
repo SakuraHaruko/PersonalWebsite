@@ -1,10 +1,19 @@
 "use client";
 
-import {Avatar, AvatarImage} from "@/components/ui/avatar";
+import {Avatar, AvatarImage} from "@/components/ui/Avatar";
 import Link from "next/link";
+import { useRouter } from 'next/navigation'
 
-export default function myHeader() {
+
+export default function Header() {
+    const router = useRouter()
+
     const handleClickScroll = (id: string) => {
+        if (window.location.pathname != "/") {
+            router.push(`/#${id}`)
+        }
+
+
         const element = document.getElementById(id);
         if (element) {
             const elementPosition = element.getBoundingClientRect().top + window.scrollY;

@@ -17,10 +17,9 @@ export default function AboutMe() {
                     </TranslateInOut>
                     <FadeInOut
                         durationIn={0.5}
-                        delay={1.3}
+                        delay={1.1}
                         ease="fast"
-                        watch overflowHidden={undefined} skipOutro={undefined} markers={undefined}
-                        >
+                        watch overflowHidden={undefined} skipOutro={undefined} markers={undefined}>
                         <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                             TODO
                         </p>

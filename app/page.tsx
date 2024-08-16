@@ -1,9 +1,9 @@
-import MyHeader from "@/components/header";
-import MyFooter from "@/components/footer";
-import MySkills from "@/components/index/skills";
-import MyProjects from "@/components/index/projects";
-import Haruko from "@/components/index/haruko";
-import AboutMe from "@/components/index/aboutMe";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import MySkills from "@/components/index/Skills";
+import MyProjects from "@/components/index/Projects";
+import Haruko from "@/components/index/Haruko";
+import AboutMe from "@/components/index/AboutMe";
 
 export default function page() {
     return (
@@ -15,8 +15,8 @@ export default function page() {
                 <MySkills />
                 <MyProjects />
             </main>
-            <MyHeader />
-            <MyFooter />
+            <Header />
+            <Footer />
         </div>
       </main>
   )
