@@ -5,7 +5,11 @@ import MyProjects from "@/components/index/Projects";
 import Haruko from "@/components/index/Haruko";
 import AboutMe from "@/components/index/AboutMe";
 
+import gsap from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+
 export default function page() {
+    gsap.registerPlugin(ScrollTrigger);
     return (
       <main>
         <div key="1" className="flex flex-col min-h-[100dvh]">

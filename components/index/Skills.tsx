@@ -10,13 +10,9 @@ import ReactIcon from "@/public/techIcons/React.svg";
 
 import Image from "next/image";
 import FadeInOut from "@/components/animations/FadeInOut";
-import gsap from "gsap";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
 import TranslateInOut from "@/components/animations/TranslateInOut";
 
 export default function MySkills() {
-    gsap.registerPlugin(ScrollTrigger);
-
     return (
         <section id="MySkills" className="w-full py-12 md:py-24 lg:py-32 border-t">
             <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6">
